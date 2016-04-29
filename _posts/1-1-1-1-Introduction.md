@@ -83,6 +83,15 @@ Image Credit - Michael Hensmann - https://www.flickr.com/photos/mycael/366490043
 
 ---
 
+# Container Security == Linux Security
+
+Note:
+
+All the mechanisms used by containers can be used by users directly
+Docker policy is for "sensible default" which can then be tweaked up or down
+
+---
+
 # Namespaces
 
 --
@@ -96,6 +105,14 @@ Image Credit - Michael Hensmann - https://www.flickr.com/photos/mycael/366490043
 --
 
 ## Network
+
+--
+
+## IPC
+
+Note: 
+
+One of the points here relates to protecting containers against a malicious container attempting to read shared memory space used by IPC http://labs.portcullis.co.uk/whitepapers/memory-squatting-attacks-on-system-v-shared-memory/
 
 --
 
@@ -117,12 +134,22 @@ Image Credit - Michael Hensmann - https://www.flickr.com/photos/mycael/366490043
 * Useful for commands that need one privilege
 * Some need careful handling (e.g. CAP_SYS_ADMIN)
 
+Note:
+
+https://github.com/docker/docker/blob/master/oci/defaults_linux.go lists the default capabilities
+
 ---
 
 # CGroups
 
 * Resource Limits
 * Restrict Access to Devices
+
+Note:
+
+Reason for the use of cgroups to limit access to devices is that the dev system is not namespaced.
+cpu, memory, blkio, devices, network, freezer, pid
+PID cgroup is a new one used for blocking fork bombs amongst other things https://github.com/docker/docker/pull/18697
 
 ---
 
@@ -179,6 +206,10 @@ Photo Credit - Anneheathen - https://flic.kr/p/aAMxAW - CC BY-SA 2.0
 --
 
 ## Image Provenance
+
+Note:
+
+Talk here about both the Dockerfile sourcees and also about Docker Content Trust, its scope and limitations
 
 --
 
