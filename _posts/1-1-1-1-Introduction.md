@@ -121,10 +121,6 @@ One of the points here relates to protecting containers against a malicious cont
 
 --
 
-## PID
-
---
-
 ## UTS
 
 --
