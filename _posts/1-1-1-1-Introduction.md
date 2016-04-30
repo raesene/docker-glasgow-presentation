@@ -20,10 +20,11 @@
 # Topics
 
 * Container Security Building Blocks {% fragment %}
-* Docker Daemon Security {% fragment %}
 * Containers Vs VMs {% fragment %}
+* Docker Daemon Security {% fragment %}
+* Practical Docker Security {% fragment %}
 * Docker Threat Models {% fragment %}
-* "Practical" Docker Security {% fragment %}
+
 
 ---
 
@@ -106,6 +107,10 @@ Docker policy is for "sensible default" which can then be tweaked up or down
 
 ## Network
 
+Note:
+
+A good example of the problems of --net=host is https://github.com/docker/docker/issues/14767 which shows a docker host that uses upstart can be rebooted by a container using --net=host
+
 --
 
 ## IPC
@@ -156,7 +161,8 @@ PID cgroup is a new one used for blocking fork bombs amongst other things https:
 # Seccomp
 
 Note:
-https://github.com/docker/docker/blob/master/docs/security/seccomp.md - Details of seccomp in Docker
+https://github.com/docker/docker/blob/master/docs/security/seccomp.md - Details of seccomp in Docker, also details the default profile
+
 
 ---
 
@@ -189,6 +195,10 @@ Photo Credit - Anneheathen - https://flic.kr/p/aAMxAW - CC BY-SA 2.0
 
 ## Inter Container Communications (--icc)
 
+Note:
+
+First up is changing the default by disabling icc, second the risk of arp poisoning, which could be mitigated by removing CAP_NET_RAW
+
 --
 
 ## The Perils of --privileged
@@ -214,6 +224,12 @@ Talk here about both the Dockerfile sourcees and also about Docker Content Trust
 --
 
 ## Image Hardening
+
+---
+
+# Threat Models
+
+What level of security is right?
 
 ---
 
