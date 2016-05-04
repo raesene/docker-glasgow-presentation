@@ -77,6 +77,7 @@ Note:
 
 Image By Alvesgaspar (self-made, stitch from 4 photographs) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons
 Depending on who you are, nation state level attackers may be a possibility.  Again very different in terms of their capabilities and methods of attack.
+
 ---
 
 <img src="/images/pandoras_box.jpg" width="75%"/>
