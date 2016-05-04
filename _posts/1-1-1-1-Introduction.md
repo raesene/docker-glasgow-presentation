@@ -41,10 +41,15 @@ Attack Surface
 Note: 
 
 Image from wikimedia - Riskgamenut -  https://upload.wikimedia.org/wikipedia/en/5/55/Riskgameboard.svg - CC BY-SA 3.0
+Concept of attack surface is very important in security, the larger the attack surface the more there is to secure and the larger the scope for security vulnerabilities
 
 --
 
 Threat Model
+
+Note:
+
+Threat models are very important in security.  First question in response to "Is this secure?" is "From what"
 
 --
 
@@ -53,6 +58,7 @@ Threat Model
 Note: 
 
 Image by Perspecsys Photos - https://flic.kr/p/qa7nm9 - CC BY-SA 2.0
+Cyber criminals are pretty prevalent these days and will focus wherever there is money to be made.  this may be wider than you think (e.g. ransomware)
 
 --
 
@@ -61,6 +67,7 @@ Image by Perspecsys Photos - https://flic.kr/p/qa7nm9 - CC BY-SA 2.0
 Note:
 
 Image By Kigsz (Own work) [CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons
+Hactivists are a different class of threat.  May be more determined but are less well resourced.  Things like DDoS more likely
 
 --
 
@@ -69,7 +76,7 @@ Image By Kigsz (Own work) [CC BY-SA 3.0 (http://creativecommons.org/licenses/by-
 Note:
 
 Image By Alvesgaspar (self-made, stitch from 4 photographs) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons
-
+Depending on who you are, nation state level attackers may be a possibility.  Again very different in terms of their capabilities and methods of attack.
 ---
 
 <img src="/images/pandoras_box.jpg" width="75%"/>
@@ -220,6 +227,10 @@ Talk here about both the Dockerfile sourcees and also about Docker Content Trust
 --
 
 ## Image Hardening
+
+Note:
+
+Cover attack surface, and also reduced patching requirements of smaller containers.
 
 ---
 
